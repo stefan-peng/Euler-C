@@ -21,11 +21,12 @@ int main(void)
                 if ((a + b + c) == 1000 && isPythagorean(a, b, c)) {
                     product = a * b * c;
                     printf("%d\n", product);
+		    goto end;
                 }
             }
         }
     }
-    return 0;
+    end: return 0;
 }
 
 int isPythagorean(int a, int b, int c)

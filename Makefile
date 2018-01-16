@@ -1,6 +1,6 @@
-CFLAGS=-Wall -pedantic –std=c9x -Wtraditional -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wconversion
+CFLAGS=-Wall -pedantic -Wtraditional -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wconversion
 
-CC=gcc
+CC=gcc-7
 
 SRCS = $(wildcard *.c)
 PROGS = $(patsubst %.c,%.o,$(SRCS))

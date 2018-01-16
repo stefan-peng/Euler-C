@@ -1,5 +1,6 @@
 /*
  * Find the largest palindrome made from the product of two 3-digit numbers.
+ * 906609
  */
  
 #include <stdio.h>
@@ -11,7 +12,7 @@ int main()
 	unsigned int i , j = 0;
 	unsigned int max = 0;
 	for (i = 100; i < 1000; i++) {
-		for (j = 100; j < 1000; j++) {
+		for (j = 1000; j >= i; j--) {
 			unsigned int p = i * j;
 			if (is_palindrome(p) && p > max)
 				max = p;
